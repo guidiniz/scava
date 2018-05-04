@@ -7,8 +7,7 @@ import java.text.MessageFormat
 class BeanB {
   
   def getSometext: String = {
-    var msg = MessageFormat.format("{0}, written in Scala", this.getClass.getSimpleName)
-    msg
+    MessageFormat.format("{0}, written in Scala", this.getClass.getSimpleName)
   }
   
 }
